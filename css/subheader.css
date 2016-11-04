@@ -1,0 +1,97 @@
+.subheader {
+    background: url('/images/background.jpg');
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.subheader-wrapper {
+    background: url('/images/girl.png') no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    right: 0;
+    bottom: 0;
+}
+
+.subheader .cloudy {
+    display: block;
+    position: absolute;
+    right: 300px;
+    bottom: 385px;
+    width: 130px;
+    padding: 20px 70px 20px 30px;
+    background: url('/images/cloud.png');
+    background-size: 100% 100%;
+    font-size: 16px;
+    text-align: center;
+    /*font-weight: bold;*/
+}
+
+.subheader .cloudy__sub {
+    font-size: 0.75em;
+    font-weight: normal;
+    font-style: italic;
+    /*text-align: right;*/
+    margin: 5px 0;
+}
+
+.subheader .flexible-container {
+    position: relative;
+    min-height: 490px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.subheader__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    margin-right: 400px;
+    display: inline-block;
+    /*max-width: 50%;*/
+    background: none;
+}
+
+.subheader__title__text span {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0 30px 10px;
+    display: inline-block;
+}
+
+.subheader__title__text span:first-child {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.subheader__features {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 40px;
+    /* flexible-container padding */
+    left: 50px;
+    right: 450px;
+}
+
+.subheader__feature {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 33.33%;
+    margin: 0;
+    padding: 30px 30px 20px 60px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    
+    background: url('/images/check.png') no-repeat left center;
+    background-size: auto 40%;
+}

@@ -1,0 +1,37 @@
+<%-
+   include('../bower_components/r5m-cms/tpl/layout.ejs', {
+      title: 'Комплексное обслуживание первичных средств пожаротушения в г. Новокузнецке',
+      titleHtml: 'Комплексное обслуживание первичных средств пожаротушения в г.&nbsp;Новокузнецке',
+      tagline: '<span>Перезарядка,</span><br/><span>техническое обслуживание и продажа огнетушителей</span>',
+      motto: 'слоган',
+      subtitle: locals.subtitle,
+      parts: [locals.parts, '_metrika'],
+      isMobile: true,
+      fonts: {
+        google: [
+          'https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic'
+        ]
+      },
+      feedbackService: 'formspree',
+      feedbackEmail: 'info@r5m.me',
+      yandexId: null,
+      info : {
+        city: 'г. Новокузнецк',
+        email: 'service@cpz-nk.ru',
+        year: '2016',
+        phones: [{
+            text: '+7 (3843) 200-206',
+            number: '+73843200206'
+        }, {
+            text: '+7 (960) 904-3107',
+            number: '+79609043107'
+        }],
+        copyright: 'ООО Центр противопожарной защиты'
+      },
+      utmContent: {
+        utm1: {
+
+        }
+      }
+   });
+%>

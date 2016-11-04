@@ -1,0 +1,30 @@
+<header class="header clearfix">
+  <div class="flexible-container">
+      <div class="header__logo">
+          <a href="/" class="header__logo__link">
+              <img src="/images/logo.png" class="header__logo__link__img"/>
+          </a>
+      </div>
+      <div class="header__phone">
+          <p class="header__phone__welcome">
+            Звоните прямо сейчас!
+          </p>
+          <p class="header__phone__numbers">
+              <% locals.info.phones.forEach(function(phone) { %> 
+                <a class="header__phone__entry" href="tel:<%= phone.number %>">
+                    <%- phone.text %>
+                </a>
+              <% }) %>
+          </p>
+          <button class="order-button r5m-action" data-action="r5mDimmer-show" data-type="call">
+               Заказать звонок
+          </button>
+      </div>
+      <div class="header__title">
+          <h1 class="header__title__text">
+              <%- locals.titleHtml %>
+          </h1>
+      </div>
+      <%# include('./_menu.ejs') %>
+  </div>
+</header>
