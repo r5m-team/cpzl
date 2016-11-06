@@ -1,0 +1,65 @@
+.services {
+    margin-top: 30px;
+}
+.services__list {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.services__title, .section__title  {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.services__list__item {
+    display: inline-block;
+    width: 33.33%;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.services__list__item::before {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 80px;
+    border-radius: 2px;
+    background-color: #E8D100;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    background-size: auto 50px;
+}
+
+.services__list__item__title {
+    font-size: 1.25rem;
+}
+
+.service-renew::before {
+    background-image: url('/images/services-renew.png');
+}
+
+.service-paint::before {
+    background-image: url('/images/services-paint.png');
+}
+
+.service-reload::before {
+    background-image: url('/images/services-reload.png');
+}
+
+.service-hydro::before {
+    background-image: url('/images/services-hydro.png');
+}
+
+.service-repair::before {
+    background-image: url('/images/services-repair.png');
+}

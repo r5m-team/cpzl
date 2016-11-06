@@ -3,6 +3,7 @@
     background-size: cover;
     position: relative;
     margin-bottom: 0;
+    overflow: visible;
 }
 
 .subheader-wrapper {
@@ -10,8 +11,8 @@
     background-position: bottom right;
     position: absolute;
     left: 0;
-    top: -50px;
-    right: 0;
+    top: 0;
+    right: -230px;
     bottom: 0;
 }
 
@@ -19,7 +20,7 @@
     display: block;
     position: absolute;
     right: 300px;
-    bottom: 385px;
+    bottom: 420px;
     width: 130px;
     padding: 20px 70px 20px 30px;
     background: url('/images/cloud.png');
@@ -38,13 +39,20 @@
 }
 
 .subheader .flexible-container {
-    position: relative;
-    min-height: 490px;
+    min-height: 580px;
     padding-bottom: 150px;
-    padding-top: 50px;
+    padding-top: 90px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    position: relative;
+}
+
+.subheader-outer-wrapper {
+    position: relative;
+    
+    overflow-x: hidden;
+    top: -40px;
 }
 
 .subheader__title {
