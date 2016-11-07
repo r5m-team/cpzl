@@ -33,6 +33,9 @@
 .header__title {
     font-size: 1.75rem;
     text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header__title__text {
     font-size: inherit;
