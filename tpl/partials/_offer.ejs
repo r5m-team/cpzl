@@ -3,8 +3,16 @@
     <div class="offer__feedback-wrapper clearfix">
       <div class="offer__feedback">
         <h2 class="offer__title">
-          <b>Заполните заявку сейчас</b>
-          и получите бесплатную консультацию специалиста
+            <% if(locals.type == 'OFFER_PRICE') { %>
+                Заполните заявку сейчас
+                и <b>получите прайс-лист</b> на свой E-mail
+            <% } else if(locals.type == 'OFFER_ASK') { %>
+                <b>Остались вопросы?</b>
+                <br/>Мы сегодня придумаем текст!
+            <% } else { %>
+                Заполните заявку сейчас
+                и <b>получите бесплатную консультацию</b> специалиста
+            <% } %>
         </h2>
         <!--<h3 class="offer__subtitle">-->
           
@@ -24,8 +32,11 @@
               <input class="r5mFeedback__input" name="email" type="text" required />
             </label>
             <button class="r5mFeedback__submit-button submit-button r5m-action order-button" type="submit">
-              <%# <i class="fa fa-check"></i> %>
-              Получить консультацию
+                <% if(locals.type == 'OFFER_PRICE') { %>
+                    Получить прайс-лист
+                <% } else { %>
+                    Получить консультацию
+                <% } %>
             </button>
           </form>
         </div>
