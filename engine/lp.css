@@ -610,6 +610,9 @@ header, section {
     font-size: 1rem;
     cursor: pointer;
 }
+.order-button:hover {
+  background: #da3d3e;
+}
 .header {
     margin-bottom: 30px;
 }
@@ -790,10 +793,13 @@ header, section {
     text-align: left;
     font-weight: normal;
     float: left;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 50px;
     margin: 0;
     padding: 0;
+}
+.offer__title b {
+  font-size: 34px;
 }
 .offer__feedback__form {
     
@@ -805,7 +811,7 @@ header, section {
     font-size: 20px;
     line-height: 30px;
 }
-.offer .r5mFeedback__input, 
+.offer .r5mFeedback__input,
 .offer .r5mFeedback__text {
     border: none;
 }
@@ -1012,7 +1018,7 @@ header, section {
     margin-top: 70px;
 }
 .license__title {
-   margin-bottom: 40px; 
+   margin-bottom: 40px;
 }
 .about__license-wrapper {
   display: block;
@@ -1021,16 +1027,23 @@ header, section {
 }
 .about__license-container {
   width: 350px;
+  height: 494px;
   display: inline-block;
   margin: 0 20px;
   position: relative;
+  overflow: hidden;
 }
 .about__license {
   width: 100%;
   display: block;
-}
-.about__license { 
   border-radius: 4px;
+  left: 0;
+}
+.about__license-container:hover .about__license {
+  width: 110%;
+  position: relative;
+  left: -5%;
+  transition: left 0.5s, width 0.5s;
 }
 .about__license__shadow {
   cursor: pointer;
@@ -1040,11 +1053,14 @@ header, section {
   position: absolute;
   top: 50%;
   left: 50%;
+  color: white;
+  font-size: 2rem;
   margin-left: -15px;
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  background-image: url(../images/loupe.png);
+  
+  
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -1070,7 +1086,6 @@ header, section {
   -o-transition: opacity 0.1s;
   -ms-transition: opacity 0.1s;
   transition: opacity 0.1s;
-  
   border-radius: 4px;
 }
 .about__license-container:hover .about__license__shadow::after {
@@ -1084,7 +1099,6 @@ header, section {
 }
 .reviews__title {
     margin-bottom: 40px;
-    
 }
 .reviews__review {
     display: inline-block;
@@ -1114,14 +1128,21 @@ header, section {
     height: 30px;
     height: 30px;
 }
-.reviews__review__image {
-    float: left;
+.reviews__review__image__wrapper {
     width: 120px;
+    height: 120px;
+    float: left;
     border-radius: 50%;
+    
+    overflow: hidden;
 }
-.reviews__review__text,
-.reviews__review__title,
-.review__text__more {
+.reviews__review__image {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 140px;
+    max-height: 140px;
+}
+.reviews__review__text, .reviews__review__title, .review__text__more {
     margin-left: 150px;
 }
 .reviews__review__title {
@@ -1133,40 +1154,46 @@ header, section {
     margin: 10px 0 0 150px;
 }
 .review__text__more {
-    color: #e8d100;
+    color: #999;
+    display: block;
 }
-.review__text__more ~.reviews__review__text {
+.review__text__more~.reviews__review__text {
     display: none;
 }
 .carousel .reviews__arrow {
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  -webkit-transform: translateY(-50%) rotate(-45deg);
-  -moz-transform: translateY(-50%) rotate(-45deg);
-  -o-transform: translateY(-50%) rotate(-45deg);
-  -ms-transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -moz-transform: translateY(-50%) rotate(-45deg);
+    -o-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
 }
 .carousel .reviews__arrow_left {
-  left: 20px;
-  border-top: 5px solid #ccc;
-  border-left: 5px solid #ccc;
+    left: 20px;
+    border-top: 5px solid #bbb;
+    border-left: 5px solid #bbb;
 }
-.carousel  .reviews__arrow_right {
-  right: 20px;
-  border-bottom: 5px solid #ccc;
-  border-right: 5px solid #ccc;
+.carousel  .carousel__left-button.disabled,
+.carousel  .carousel__right-button.disabled,
+.carousel  .carousel__left-button.disabled:hover,
+.carousel  .carousel__right-button.disabled:hover{
+  border-color: #e3e3e3;
 }
-.carousel .reviews__arrow_left:hover,
-.carousel .reviews__arrow_right:hover {
-  border-color: #666;
+.carousel .reviews__arrow_right {
+    right: 20px;
+    border-bottom: 5px solid #bbb;
+    border-right: 5px solid #bbb;
+}
+.carousel .reviews__arrow_left:hover, .carousel .reviews__arrow_right:hover {
+    border-color: #666;
 }
 .clients {
     margin-bottom: 70px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .clients__title {
     margin-bottom: 40px;
@@ -1190,7 +1217,6 @@ header, section {
     padding: 0 20px;
     max-width: 33.33%;
     box-sizing: border-box;
-    
 }
 .clients__content__list__item.small .clients__content__list__item__img {
     max-height: 90px;
@@ -1200,7 +1226,6 @@ header, section {
     max-height: 140px;
     max-width: 100%;
     display: inline-block;
-    
     vertical-align: middle;
 }
 .client__img__wrapper {
@@ -1217,7 +1242,6 @@ header, section {
 }
 .footer {
     margin-top: -40px;
-    
 }
 .footer__title {
     font-size: 1.5rem;
@@ -1227,21 +1251,40 @@ header, section {
     text-align: center;
 }
 .footer-wrapper-top {
-    background: #CFCFCF;
-    color: #444444;
+  background: url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  
     padding-top: 40px;
     padding-bottom : 40px;
 }
+.footer-wrapper-top .flexible-container {
+  z-index: 10;
+  position: relative;
+}
+.footer-wrapper-top::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: rgba(0,0,0,0.6);
+}
 .footer-wrapper {
-    background: #444444;
-    color: white;
+    background: #dedede;
+    color: black;
     padding: 15px 0;
 }
 .footer__phone__numbers {
     margin-bottom: 0;
 }
 .footer__phone__entry {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: inherit;
     font-size: 1.25rem;
@@ -1253,4 +1296,80 @@ header, section {
 .copyright__contact a {
     color: inherit;
     font-size: 1.25rem;
+}
+.header__order__vk {
+  
+  padding: 0 10px;
+  margin: 10px 0 0;
+  font-size: 1.25rem;
+}
+.header__order__vk:hover {
+  
+}
+.header__order__vk a {
+  color: inherit;
+  text-decoration: none;
+}
+.vk-wrapper {
+  color: inherit;
+  border: solid 0;
+  padding: 1px 5px 3px 4px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: top;
+  margin: 0 0 0 5px;
+  background: #444;
+  color: #CFCFCF;
+}
+.header__order__vk:hover .vk-wrapper {
+  color: white;
+}
+.r5m-dimmer .r5m-dimmer-wrapper {
+  padding: 20px;
+  background: white;
+  border-radius: 2px;
+}
+.r5m-dimmer .r5mFeedback {
+  padding: 20px;
+  border: dashed 2px black;
+  border-radius: 2px;
+  background: transparent;
+  width: 450px;
+  font-size: 1.5rem;
+}
+.r5m-dimmer .r5mFeedback__submit-button {
+  background: #e8d100;
+  color: black;
+  text-transform: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+.r5m-dimmer .r5mFeedback__submit-button:hover {
+  background: #e8c300;
+}
+.r5m-dimmer .r5mFeedback__submit-button {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.r5m-dimmer .r5mFeedback__form__header {
+  font-size: 2rem;
+  text-transform: none;
+  
+}
+.r5m-dimmer .r5mFeedback__close-button {
+  top: 4px;
+  right: 1px;
+  font-size: 1.25rem;
+}
+.r5mFeedback__form__descr {
+  margin: 0 0 20px;
+  
+  
+  color: black;
+  font-size: 1.25rem;
 }
