@@ -13,3 +13,7 @@
     font-size: 1rem;
     cursor: pointer;
 }
+
+.order-button:hover {
+  background: #da3d3e;
+}

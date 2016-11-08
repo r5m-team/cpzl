@@ -1,6 +1,7 @@
 .footer {
     margin-top: -40px;
-    
+
+
 }
 
 .footer__title {
@@ -12,16 +13,38 @@
     text-align: center;
 }
 
+
 .footer-wrapper-top {
-    background: #CFCFCF;
-    color: #444444;
+  background: url('../images/about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  /*background-attachment: fixed;*/
     padding-top: 40px;
     padding-bottom : 40px;
 }
 
+.footer-wrapper-top .flexible-container {
+  z-index: 10;
+  position: relative;
+}
+
+.footer-wrapper-top::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: rgba(0,0,0,0.6);
+}
+
 .footer-wrapper {
-    background: #444444;
-    color: white;
+    background: #dedede;
+    color: black;
     padding: 15px 0;
 }
 
@@ -31,7 +54,7 @@
 }
 
 .footer__phone__entry {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: inherit;
     font-size: 1.25rem;
@@ -45,4 +68,41 @@
 .copyright__contact a {
     color: inherit;
     font-size: 1.25rem;
+}
+
+
+/**/
+
+.header__order__vk {
+  /*color: white;*/
+  padding: 0 10px;
+  margin: 10px 0 0;
+  font-size: 1.25rem;
+}
+
+.header__order__vk:hover {
+  /*color: #e8b400;*/
+}
+
+.header__order__vk a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.vk-wrapper {
+  color: inherit;
+  border: solid 0;
+  padding: 1px 5px 3px 4px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: top;
+  margin: 0 0 0 5px;
+  background: #444;
+  color: #CFCFCF;
+}
+
+.header__order__vk:hover .vk-wrapper {
+  color: white;
 }

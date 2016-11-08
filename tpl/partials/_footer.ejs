@@ -8,14 +8,22 @@
                     654005, Россия, Кемеровская область, г. Новокузнецк, пр. Строителей 7/1а
                 </p>
                 <p class="footer__phone__numbers">
-                      <% locals.info.phones.forEach(function(phone) { %> 
+                      <% locals.info.phones.forEach(function(phone) { %>
                         <a class="footer__phone__entry" href="tel:<%= phone.number %>">
                             <%- phone.text %>
-                        </a>
+                        </a><br/>
                       <% }) %>
                   </p>
                 <p class="copyright__contact">
                   <a href="mailto:<%= info.email %>"><%= info.email %></a>
+                </p>
+                <p class="header__order__vk">
+                  <a href="https://vk.com/ckbnk">
+                    Мы Вконтакте
+                    <span class="vk-wrapper">
+                      <i class="fa fa-vk"></i>
+                    </span>
+                  </a>
                 </p>
             </div>
         </div>
@@ -36,5 +44,5 @@
               </div> %>
             </div>
           </div>
-    
+
 </footer>

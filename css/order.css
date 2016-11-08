@@ -15,10 +15,14 @@
     text-align: left;
     font-weight: normal;
     float: left;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 50px;
     margin: 0;
     padding: 0;
+}
+
+.offer__title b {
+  font-size: 34px;
 }
 
 .offer__feedback__form {
@@ -33,7 +37,7 @@
     line-height: 30px;
 }
 
-.offer .r5mFeedback__input, 
+.offer .r5mFeedback__input,
 .offer .r5mFeedback__text {
     border: none;
 }

@@ -1,0 +1,56 @@
+.r5m-dimmer .r5m-dimmer-wrapper {
+  padding: 20px;
+  background: white;
+  border-radius: 2px;
+}
+
+.r5m-dimmer .r5mFeedback {
+  padding: 20px;
+  border: dashed 2px black;
+  border-radius: 2px;
+  background: transparent;
+  width: 450px;
+  font-size: 1.5rem;
+}
+
+.r5m-dimmer .r5mFeedback__submit-button {
+  background: #e8d100;
+  color: black;
+  text-transform: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+.r5m-dimmer .r5mFeedback__submit-button:hover {
+  background: #e8c300;
+}
+
+.r5m-dimmer .r5mFeedback__submit-button {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+
+.r5m-dimmer .r5mFeedback__form__header {
+  font-size: 2rem;
+  text-transform: none;
+  /*font-weight: normal;*/
+}
+
+.r5m-dimmer .r5mFeedback__close-button {
+  top: 4px;
+  right: 1px;
+  font-size: 1.25rem;
+}
+
+.r5mFeedback__form__descr {
+  margin: 0 0 20px;
+  /*text-align: left;*/
+  /*text-indent: 1.25em;*/
+  color: black;
+  font-size: 1.25rem;
+}

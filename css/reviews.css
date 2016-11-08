@@ -4,7 +4,6 @@
 
 .reviews__title {
     margin-bottom: 40px;
-    
 }
 
 .reviews__review {
@@ -38,16 +37,23 @@
     height: 30px;
 }
 
-.reviews__review__image {
-    float: left;
+.reviews__review__image__wrapper {
     width: 120px;
+    height: 120px;
+    float: left;
     border-radius: 50%;
+    /*margin: 0 20px 13px 0;*/
+    overflow: hidden;
 }
 
+.reviews__review__image {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 140px;
+    max-height: 140px;
+}
 
-.reviews__review__text,
-.reviews__review__title,
-.review__text__more {
+.reviews__review__text, .reviews__review__title, .review__text__more {
     margin-left: 150px;
 }
 
@@ -62,41 +68,49 @@
 }
 
 .review__text__more {
-    color: #e8d100;
+    color: #999;
+    display: block;
 }
 
-.review__text__more ~.reviews__review__text {
+.review__text__more~.reviews__review__text {
     display: none;
 }
 
 
 /**/
+
 .carousel .reviews__arrow {
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  -webkit-transform: translateY(-50%) rotate(-45deg);
-  -moz-transform: translateY(-50%) rotate(-45deg);
-  -o-transform: translateY(-50%) rotate(-45deg);
-  -ms-transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -moz-transform: translateY(-50%) rotate(-45deg);
+    -o-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 .carousel .reviews__arrow_left {
-  left: 20px;
-  border-top: 5px solid #ccc;
-  border-left: 5px solid #ccc;
+    left: 20px;
+    border-top: 5px solid #bbb;
+    border-left: 5px solid #bbb;
 }
 
-.carousel  .reviews__arrow_right {
-  right: 20px;
-  border-bottom: 5px solid #ccc;
-  border-right: 5px solid #ccc;
+.carousel  .carousel__left-button.disabled,
+.carousel  .carousel__right-button.disabled,
+.carousel  .carousel__left-button.disabled:hover,
+.carousel  .carousel__right-button.disabled:hover{
+  border-color: #e3e3e3;
 }
 
-.carousel .reviews__arrow_left:hover,
-.carousel .reviews__arrow_right:hover {
-  border-color: #666;
+.carousel .reviews__arrow_right {
+    right: 20px;
+    border-bottom: 5px solid #bbb;
+    border-right: 5px solid #bbb;
+}
+
+.carousel .reviews__arrow_left:hover, .carousel .reviews__arrow_right:hover {
+    border-color: #666;
 }

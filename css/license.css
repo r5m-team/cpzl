@@ -3,7 +3,7 @@
 }
 
 .license__title {
-   margin-bottom: 40px; 
+   margin-bottom: 40px;
 }
 
 .about__license-wrapper {
@@ -14,18 +14,25 @@
 
 .about__license-container {
   width: 350px;
+  height: 494px;
   display: inline-block;
   margin: 0 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .about__license {
   width: 100%;
   display: block;
+  border-radius: 4px;
+  left: 0;
 }
 
-.about__license { 
-  border-radius: 4px;
+.about__license-container:hover .about__license {
+  width: 110%;
+  position: relative;
+  left: -5%;
+  transition: left 0.5s, width 0.5s;
 }
 
 .about__license__shadow {
@@ -37,11 +44,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  color: white;
+  font-size: 2rem;
   margin-left: -15px;
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  background-image: url("../images/loupe.png");
+  /*background-image: url("../images/loupe.png");*/
+  /*content: "+";*/
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -68,7 +78,7 @@
   -o-transition: opacity 0.1s;
   -ms-transition: opacity 0.1s;
   transition: opacity 0.1s;
-  
+
   border-radius: 4px;
 }
 
