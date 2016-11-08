@@ -31,15 +31,15 @@
 }
 
 .whywe-time::before {
-    background-image: url('/images/whywe-time.png');
+    background-image: url('../images/whywe-time.png');
 }
 
 .whywe-delivery::before {
-    background-image: url('/images/whywe-delivery.png');
+    background-image: url('../images/whywe-delivery.png');
 }
 
 .whywe-warranty::before {
-    background-image: url('/images/whywe-warranty.png');
+    background-image: url('../images/whywe-warranty.png');
 }
 
 .whywe__list__item__text {

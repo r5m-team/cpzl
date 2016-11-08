@@ -21,7 +21,7 @@
     bottom: 0;
     width: 300px;
     
-    background-image: url('/images/withus-bg.png');
+    background-image: url('../images/withus-bg.png');
     background-position: right top;
     background-repeat: no-repeat;
     background-size: auto 115%;

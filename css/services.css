@@ -45,21 +45,21 @@
 }
 
 .service-renew::before {
-    background-image: url('/images/services-renew.png');
+    background-image: url('../images/services-renew.png');
 }
 
 .service-paint::before {
-    background-image: url('/images/services-paint.png');
+    background-image: url('../images/services-paint.png');
 }
 
 .service-reload::before {
-    background-image: url('/images/services-reload.png');
+    background-image: url('../images/services-reload.png');
 }
 
 .service-hydro::before {
-    background-image: url('/images/services-hydro.png');
+    background-image: url('../images/services-hydro.png');
 }
 
 .service-repair::before {
-    background-image: url('/images/services-repair.png');
+    background-image: url('../images/services-repair.png');
 }

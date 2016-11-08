@@ -1,5 +1,5 @@
 .subheader {
-    background: url('/images/background.jpg');
+    background: url('../images/background.jpg');
     background-size: cover;
     position: relative;
     background-position: bottom left;
@@ -8,7 +8,7 @@
 }
 
 .subheader-wrapper {
-    background: url('/images/girl.png') no-repeat;
+    background: url('../images/girl.png') no-repeat;
     background-position: bottom right;
     position: absolute;
     left: 0;
@@ -25,7 +25,7 @@
     top: 0;
     width: 130px;
     padding: 20px 70px 20px 30px;
-    background: url('/images/cloud.png');
+    background: url('../images/cloud.png');
     background-size: 100% 100%;
     font-size: 16px;
     text-align: center;
@@ -122,10 +122,10 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
     
-    background: url('/images/check.png') no-repeat left center;
+    background: url('../images/check.png') no-repeat left center;
     background-size: auto 40%;
     
     text-shadow: 1px 1px 1px grey;

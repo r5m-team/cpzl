@@ -12,7 +12,7 @@
     "url": ""
   },
   "r5m": {
-    "deployTo": "",
+    "deployTo": "git@github.com:r5m-team/cpzl.git",
     "deployToBranch": "gh-pages",
     "htmlFiles": [
       "index"
