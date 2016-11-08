@@ -675,6 +675,13 @@ header, section {
     right: -230px;
     bottom: 0;
 }
+.subheader-wrapper2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 .subheader .cloudy {
     display: block;
     position: absolute;
@@ -707,7 +714,6 @@ header, section {
 }
 .subheader-outer-wrapper {
     position: relative;
-    
     overflow-x: hidden;
     top: -40px;
 }
@@ -744,7 +750,6 @@ header, section {
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.9);
-    
 }
 .subheader__title__text > span > span {
     position: relative;
@@ -772,10 +777,8 @@ header, section {
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
-    
     background: url(../images/check.png) no-repeat left center;
     background-size: auto 40%;
-    
     text-shadow: 1px 1px 1px grey;
 }
 .offer {
@@ -1398,7 +1401,7 @@ header, section {
         text-align: center;
     }
     .order-button {
-        padding: 3px 10px;
+        padding: 10px;
         height: auto;
         font-size: 0.9rem;
         width: auto;
