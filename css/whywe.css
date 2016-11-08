@@ -9,7 +9,7 @@
 
 .whywe__list__item {
     display: inline-block;
-    width: 33.33%;
+    width: 25%;
     
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -32,6 +32,10 @@
 
 .whywe-time::before {
     background-image: url('../images/whywe-time.png');
+}
+
+.whywe-4::before {
+    background-image: url('../images/4.png');
 }
 
 .whywe-delivery::before {
