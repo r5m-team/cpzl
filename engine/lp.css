@@ -656,7 +656,7 @@ header, section {
     margin: 0 0 10px 0;
 }
 .subheader {
-    background: url('/images/background.jpg');
+    background: url(../images/background.jpg);
     background-size: cover;
     position: relative;
     background-position: bottom left;
@@ -664,7 +664,7 @@ header, section {
     overflow: visible;
 }
 .subheader-wrapper {
-    background: url('/images/girl.png') no-repeat;
+    background: url(../images/girl.png) no-repeat;
     background-position: bottom right;
     position: absolute;
     left: 0;
@@ -680,7 +680,7 @@ header, section {
     top: 0;
     width: 130px;
     padding: 20px 70px 20px 30px;
-    background: url('/images/cloud.png');
+    background: url(../images/cloud.png);
     background-size: 100% 100%;
     font-size: 16px;
     text-align: center;
@@ -767,10 +767,10 @@ header, section {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
     
-    background: url('/images/check.png') no-repeat left center;
+    background: url(../images/check.png) no-repeat left center;
     background-size: auto 40%;
     
     text-shadow: 1px 1px 1px grey;
@@ -859,19 +859,19 @@ header, section {
     font-size: 1.25rem;
 }
 .service-renew::before {
-    background-image: url('/images/services-renew.png');
+    background-image: url(../images/services-renew.png);
 }
 .service-paint::before {
-    background-image: url('/images/services-paint.png');
+    background-image: url(../images/services-paint.png);
 }
 .service-reload::before {
-    background-image: url('/images/services-reload.png');
+    background-image: url(../images/services-reload.png);
 }
 .service-hydro::before {
-    background-image: url('/images/services-hydro.png');
+    background-image: url(../images/services-hydro.png);
 }
 .service-repair::before {
-    background-image: url('/images/services-repair.png');
+    background-image: url(../images/services-repair.png);
 }
 .withus {
     margin-top: 70px;
@@ -894,7 +894,7 @@ header, section {
     bottom: 0;
     width: 300px;
     
-    background-image: url('/images/withus-bg.png');
+    background-image: url(../images/withus-bg.png);
     background-position: right top;
     background-repeat: no-repeat;
     background-size: auto 115%;
@@ -946,13 +946,13 @@ header, section {
     background-size: auto 100%;
 }
 .whywe-time::before {
-    background-image: url('/images/whywe-time.png');
+    background-image: url(../images/whywe-time.png);
 }
 .whywe-delivery::before {
-    background-image: url('/images/whywe-delivery.png');
+    background-image: url(../images/whywe-delivery.png);
 }
 .whywe-warranty::before {
-    background-image: url('/images/whywe-warranty.png');
+    background-image: url(../images/whywe-warranty.png);
 }
 .whywe__list__item__text {
     margin: 0;
