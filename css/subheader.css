@@ -16,6 +16,13 @@
     right: -230px;
     bottom: 0;
 }
+.subheader-wrapper2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .subheader .cloudy {
     display: block;
@@ -52,7 +59,7 @@
 
 .subheader-outer-wrapper {
     position: relative;
-    
+
     overflow-x: hidden;
     top: -40px;
 }
@@ -93,7 +100,7 @@
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.9);
-    
+
 }
 
 .subheader__title__text > span > span {
@@ -124,9 +131,9 @@
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
-    
+
     background: url('../images/check.png') no-repeat left center;
     background-size: auto 40%;
-    
+
     text-shadow: 1px 1px 1px grey;
 }
