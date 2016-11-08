@@ -959,7 +959,7 @@ header, section {
     text-align: center;
 }
 .about {
-    background: url('/images/about.jpg');
+    background: url(../images/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
