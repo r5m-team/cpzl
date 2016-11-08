@@ -111,6 +111,9 @@
         float: none;
         width: auto;
     }
+    .r5m-dimmer .r5m-dimmer-wrapper {
+        width: 300px;
+    }
     .r5mFeedback__input, .r5mFeedback__text {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -196,59 +199,53 @@
         margin-left: 0;
     }
     .reviews__review__text, .reviews__review__title, .review__text__more {
-      margin-left: 0;
+        margin-left: 0;
     }
-
     .reviews__review__image__wrapper {
-      width: 100px;
-      height: 100px;
-      margin: 0 20px 7px 0;
+        width: 100px;
+        height: 100px;
+        margin: 0 20px 7px 0;
     }
     .reviews__review__image {
-      /*width: 100%;*/
-      min-width: 0;
-      min-height: 0;
-      max-width: 120px;
-      max-height: 120px;
+        /*width: 100%;*/
+        min-width: 0;
+        min-height: 0;
+        max-width: 120px;
+        max-height: 120px;
     }
-
     /* CLIENTS */
     .clients__content__list {
-      padding: 0;
+        padding: 0;
     }
     .clients__content__list__item {
-      max-width: 100%;
+        max-width: 100%;
     }
     .clients {
-      margin-top: 30px;
+        margin-top: 30px;
     }
     .client__img__wrapper {
-      height: auto;
+        height: auto;
     }
     .clients__content__list__item {
-      margin-top: 20px;
+        margin-top: 20px;
     }
-
     .withus__list--wrapper {
-      overflow: hidden;
+        overflow: hidden;
     }
-
     /* DIMMER */
     .r5m-dimmer .r5mFeedback {
-      width: auto;
+        width: auto;
     }
     .r5m-dimmer .r5mFeedback__form__header {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
-
     .r5mFeedback__form__descr {
-      font-size: 1rem;
+        font-size: 1rem;
     }
     .r5m-dimmer .r5mFeedback__submit-button {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
-
     .r5mFeedback__placeholder {
-      font-size: 15px;
+        font-size: 15px;
     }
 }
