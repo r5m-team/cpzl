@@ -28,7 +28,11 @@
               <input class="r5mFeedback__input" name="phone" required type="text" />
             </label>%>
             <label class="r5mFeedback__label last">
-              <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
+              <% if(locals.type == 'OFFER_PRICE') { %>
+                <span class="r5mFeedback__placeholder">E-mail для получения прайс-листа*</span>
+              <% } else { %>
+                <span class="r5mFeedback__placeholder">E-mail или телефон для связи*</span>
+              <% } %>
               <input class="r5mFeedback__input" name="email" type="text" required />
             </label>
             <button class="r5mFeedback__submit-button submit-button r5m-action order-button" type="submit">
