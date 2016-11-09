@@ -5,6 +5,7 @@ html {
 body {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     margin: 20px 0 0 0;
+    min-width: 1000px;
 }
 
 header, section {
@@ -14,4 +15,5 @@ header, section {
 
 .flexible-container {
     min-width: 1000px;
+    box-sizing: border-box;
 }

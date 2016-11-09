@@ -93,16 +93,21 @@
 .vk-wrapper {
   color: inherit;
   border: solid 0;
-  padding: 1px 5px 3px 4px;
-  -moz-border-radius: 50%;
+  /*padding: 1px 5px 3px 4px;*/
+  /*-moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 50%;*/
   vertical-align: top;
-  margin: 0 0 0 5px;
-  background: #444;
-  color: #CFCFCF;
+  /*margin: 0 0 0 5px;*/
+  /*background: #444;*/
+  /*color: #CFCFCF;*/
 }
 
 .header__order__vk:hover .vk-wrapper {
   color: white;
+}
+
+.vk-wrapper__img {
+  height: 1.25em;
+  vertical-align: bottom;
 }

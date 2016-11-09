@@ -81,12 +81,14 @@
     .subheader .cloudy {
         right: 160px;
         width: 150px;
-        box-sizing: border-box;
-        padding: 10px;
-        background-image: none;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 30px;
-        border: solid 1px #ccc;
+        /*box-sizing: border-box; */
+        padding: 10px 10px 30px 10px;
+        /*background-image: none;
+        background: rgba(255, 255, 255, 0.9);*/
+        background-image: url('../../images/cloud_2.png');
+        background-repeat: no-repeat;
+        /*border-radius: 30px;*/
+        /*border: solid 1px #ccc;*/
         top: 10px;
     }
     /**/
