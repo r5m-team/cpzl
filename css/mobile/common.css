@@ -1,4 +1,7 @@
 @media screen and (max-width: 600px) {
+  body {
+    min-width: 100%;
+  }
     .flexible-container {
         min-width: 100%;
         -moz-box-sizing: border-box;
@@ -194,6 +197,7 @@
     }
     .reviews__review {
         padding: 10px 0;
+        margin-top: 20px;
         width: auto;
     }
     .reviews__review--wrapper {
