@@ -1150,7 +1150,6 @@ header, section {
 }
 .reviews__review__text, .reviews__review__title, .review__text__more {
     margin-left: 150px;
-    white-space: normal;
 }
 .reviews__review__title {
     margin: 0 0 20px 150px;
@@ -1211,12 +1210,11 @@ header, section {
     vertical-align: middle;
 }
 .clients__content__list:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em;
-    
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; 
 }
 .clients__content__list__item {
     display: inline-block;
@@ -1242,24 +1240,11 @@ header, section {
     vertical-align: middle;
 }
 .client__img__wrapper:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em;
-    
-}
-.clients__content__list__item__img {
-    display: none;
-}
-.clients__content__list__item__img.bw {
-    display: inline;
-}
-.clients__content__list__item:hover .clients__content__list__item__img {
-    display: inline;
-}
-.clients__content__list__item:hover .clients__content__list__item__img.bw {
-    display: none;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; 
 }
 .footer {
     margin-top: -40px;
