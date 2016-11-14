@@ -55,6 +55,7 @@
 
 .reviews__review__text, .reviews__review__title, .review__text__more {
     margin-left: 150px;
+    white-space: normal;
 }
 
 .reviews__review__title {
