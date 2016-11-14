@@ -18,7 +18,23 @@
 
         <!--</h3>-->
         <div class="r5mFeedback offer__feedback__form">
-          <form action="/feedback" class="r5mFeedback__form">
+          <form action="/feedback" class="r5mFeedback__form" 
+                <% if(locals.type == 'OFFER_PRICE') { %>
+          			data-metrika-goal="r5m-price"
+          		<% } else if(locals.type == 'OFFER_ASK') { %>
+                  data-metrika-goal="r5m-ask"
+                <% } else { %>
+                  data-metrika-goal="r5m-call"
+                <% } %>>
+            <input type="hidden" name="page"
+            	<% if(locals.type == 'OFFER_PRICE') { %>
+          			value="Заказ прайс-листа"
+          		<% } else if(locals.type == 'OFFER_ASK') { %>
+                    value="Хочу задать вопрос"
+                <% } else { %>
+                    value="Заказ бесплатной консультации"
+                <% } %>
+            />
             <label class="r5mFeedback__label">
               <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
               <input class="r5mFeedback__input" name="name" required type="text" />

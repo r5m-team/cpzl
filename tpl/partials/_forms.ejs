@@ -27,11 +27,20 @@
         </h2>
         <p>
           К сожалению, Ваше сообщение не было отправлено из-за ошибки.
-          <br/>Приносим извинения за доставленные неудобства
-          <br/>Пожалуйста, свяжитесь с нами
-          <a class="r5m-dimmer__link" href="contacts.html">любым другим способом</a>,
-          <br/>и мы с радостью ответим на все Ваши вопросы.
+          <br/>Приносим извинения за доставленные неудобства.
+          <br/>Пожалуйста, свяжитесь с нами любым другим способом:
         </p>
+        <p class="footer__phone__numbers">
+          <% locals.info.phones.forEach(function(phone) { %>
+            <a class="footer__phone__entry" href="tel:<%= phone.number %>">
+              <%- phone.text %>
+            </a><br/>
+           <% }) %>
+        </p>
+        <p class="copyright__contact">
+          <a href="mailto:<%= info.email %>"><%= info.email %></a>
+        </p>
+        <p>Мы с радостью ответим на все Ваши вопросы.</p>
         <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
           Ок
         </button>
@@ -41,7 +50,7 @@
     <%# Call form %>
     <div class="r5m-dimmer-wrapper r5m-dimmer-call hidden">
       <div class="r5mFeedback">
-        <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-call-me">
+        <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-call">
           <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
             <i class="fa fa-times"></i>
           </button>
@@ -58,39 +67,9 @@
           <button class="r5mFeedback__submit-button submit-button" type="submit">
             Заказать звонок
           </button>
+          <input type="hidden" name="page" value="Заказ звонка"/>
         </form>
       </div>
-    </div>
-
-    <%# Order form %>
-    <div class="r5m-dimmer-wrapper r5m-dimmer-order hidden">
-      <div class="r5mFeedback">
-        <form action="/feedback" class="r5mFeedback__form" data-metrika-goal="r5m-order">
-          <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
-            <i class="fa fa-times"></i>
-          </button>
-          <h2 class="r5mFeedback__form__header">Оставить заявку</h2>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Введите Ваше имя*</span>
-            <input class="r5mFeedback__input" name="name" required="" type="text">
-          </label>
-          <%# <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Телефон*</span>
-            <input class="r5mFeedback__input" name="phone" required="" type="text">
-          </label>%>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">E-mail или телефон*</span>
-            <input class="r5mFeedback__input" name="email" type="text" required>
-          </label>
-          <label class="r5mFeedback__label">
-            <span class="r5mFeedback__placeholder">Вопросы или комментарии</span>
-            <textarea class="r5mFeedback__text" name="text"></textarea>
-          </label>
-          <button class="r5mFeedback__submit-button submit-button" type="submit">
-            Оставить заявку
-          </button>
-        </form>
-      </div>
-    </div>
+    </div>    
   </div>
 </div>
