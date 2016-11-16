@@ -28,8 +28,8 @@
     display: block;
     position: absolute;
     right: 300px;
-    /*bottom: 420px;*/
-    top: 0;
+    bottom: 420px;
+    /*top: 0;*/
     width: 130px;
     padding: 20px 70px 20px 30px;
     background: url('../images/cloud.png') no-repeat;

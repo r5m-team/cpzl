@@ -1,4 +1,4 @@
-<section class="offer clearfix">
+<section class="offer clearfix" <% if(locals.id) { %> id="<%= locals.id %>"<% } %>>
   <div class="flexible-container">
     <div class="offer__feedback-wrapper clearfix">
       <div class="offer__feedback">
@@ -18,7 +18,7 @@
 
         <!--</h3>-->
         <div class="r5mFeedback offer__feedback__form">
-          <form action="/feedback" class="r5mFeedback__form" 
+          <form action="/feedback" class="r5mFeedback__form"
                 <% if(locals.type == 'OFFER_PRICE') { %>
           			data-metrika-goal="r5m-price"
           		<% } else if(locals.type == 'OFFER_ASK') { %>
