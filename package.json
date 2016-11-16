@@ -15,9 +15,10 @@
     "deployTo": "git@github.com:r5m-team/cpzl.git",
     "deployToBranch": "gh-pages",
     "htmlFiles": [
-      "index"
+      "index",
+      "404"
     ],
-    "minifyHtml": false,
+    "minifyHtml": true,
     "clientVersion": "v0.0.7"
   },
   "dependencies": {
