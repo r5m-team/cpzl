@@ -22,9 +22,9 @@
     "clientVersion": "v0.0.7"
   },
   "dependencies": {
-    "bower": "^1.7.7",
-    "browser-sync": "^2.11.1",
-    "ejs-on-command": "https://github.com/r5m-team/ejs-on-command.git",
+    "bower": "^1.8.14",
+    "browser-sync": "^2.27.10",
+    "ejs-on-command": "git+https://github.com/r5m-team/ejs-on-command.git",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-shell": "^0.5.2",
